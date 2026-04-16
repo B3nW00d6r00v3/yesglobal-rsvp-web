@@ -4,70 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
-  <meta name="description" id="meta-description"
-    content="yesberlin.rsvp — Der kuratierte Event-Newsletter für Berlin. Musik, Nightlife, Kultur, Kunst. Jeden Montag und Donnerstag.">
-
-  <!-- Open Graph -->
+  <meta name="description" id="meta-description" content="YES Global — Event Intelligence für Städte weltweit. Kuratierte Event-Newsletter, powered by Technologie und Leidenschaft für Kultur.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yesberlin.rsvp">
-  <meta property="og:title" id="og-title" content="yesberlin.rsvp — Events. Kuratiert.">
-  <meta property="og:description" id="og-description"
-    content="Kein Algorithmus. Kein Spam. Nur die Events, die es wirklich wert sind.">
+  <meta property="og:url" content="https://yesglobal.rsvp">
+  <meta property="og:title" content="YES Global — Event Intelligence. Built for Cities.">
+  <meta property="og:description" content="Live culture. Live your city. YES delivers the experiences that matter.">
+  <title id="page-title">YES Global — Event Intelligence. Für Städte gebaut.</title>
 
-  <title id="page-title">yesberlin.rsvp — Events. Kuratiert.</title>
-
-  <!-- GTM — ⚠️ GTM-XXXXXXX durch eigene Container-ID ersetzen -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
-
-  <!-- KLARO CONFIG -->
-  <script>
-    var klaroConfig = {
-      version: 1, lang: 'de',
-      storageMethod: 'localStorage', storageName: 'yesberlin_consent',
-      mustConsent: false, privacyPolicy: '/datenschutz.html',
-      translations: {
-        de: {
-          consentNotice: { description: 'Wir nutzen externe Dienste für Analytics und Werbung. Mit deiner Einwilligung helfen sie uns, yesberlin.rsvp zu verbessern.', learnMore: 'Einstellungen' },
-          consentModal: { title: 'Datenschutz-Einstellungen', description: 'Hier kannst du anpassen, welche Dienste wir nutzen dürfen.', privacyPolicy: { name: 'Datenschutzerklärung', text: 'Mehr in unserer {privacyPolicy}.' } },
-          acceptAll: 'Alle akzeptieren', acceptSelected: 'Auswahl speichern', decline: 'Ablehnen', close: 'Schließen', ok: 'OK',
-          services: {
-            'google-tag-manager': { title: 'Google Analytics', description: 'Website-Analyse: Besucher, Herkunft, Kampagnen-Tracking (UTM), Conversions. Daten an Google-Server (USA).' },
-            'meta-pixel': { title: 'Meta Pixel (Facebook/Instagram)', description: 'Misst Werbeanzeigen-Wirksamkeit auf Instagram und Facebook. Daten an Meta-Server (USA).' },
-            'bing-ads': { title: 'Microsoft Advertising (Bing)', description: 'Conversion-Tracking für Bing-Suchanzeigen. Daten an Microsoft-Server.' },
-          },
-        },
-        en: {
-          consentNotice: { description: 'We use external services for analytics and advertising. With your consent, they help us improve yesberlin.rsvp.', learnMore: 'Settings' },
-          consentModal: { title: 'Privacy Settings', description: 'Here you can adjust which services we are allowed to use.', privacyPolicy: { name: 'Privacy Policy', text: 'Read more in our {privacyPolicy}.' } },
-          acceptAll: 'Accept all', acceptSelected: 'Save selection', decline: 'Decline', close: 'Close', ok: 'OK',
-          services: {
-            'google-tag-manager': { title: 'Google Analytics', description: 'Website analysis: visitors, origin, campaign tracking (UTM), conversions. Data transferred to Google servers (US).' },
-            'meta-pixel': { title: 'Meta Pixel (Facebook/Instagram)', description: 'Measures ad effectiveness on Instagram and Facebook. Data transferred to Meta servers (US).' },
-            'bing-ads': { title: 'Microsoft Advertising (Bing)', description: 'Conversion tracking for Bing search ads. Data transferred to Microsoft servers.' },
-          },
-        },
-      },
-      services: [
-        { name: 'google-tag-manager', purposes: ['analytics','advertising'], required: false, default: false,
-          onAccept: `dataLayer.push({ event: 'klaro_consent', analytics_consent: true });`,
-          onDecline: `dataLayer.push({ event: 'klaro_consent', analytics_consent: false });` },
-        { name: 'meta-pixel', purposes: ['advertising'], required: false, default: false,
-          onAccept: `dataLayer.push({ event: 'klaro_consent', meta_pixel_consent: true });`,
-          onDecline: `dataLayer.push({ event: 'klaro_consent', meta_pixel_consent: false });` },
-        { name: 'bing-ads', purposes: ['advertising'], required: false, default: false,
-          onAccept: `dataLayer.push({ event: 'klaro_consent', bing_consent: true });`,
-          onDecline: `dataLayer.push({ event: 'klaro_consent', bing_consent: false });` },
-      ],
-    };
-  </script>
-  <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css">
-  <script defer src="https://cdn.kiprotect.com/klaro/v0.7/klaro.js"></script>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -80,705 +23,379 @@
       --muted:    #555555;
       --cream:    #F2EDE4;
       --white:    #FAFAF8;
-      --lime:     #D4F53C;
-      --lime-dim: #b8d932;
+      --blue:     #18A0FB;
+      --blue-dim: #0f85d4;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body {
-      background: var(--black);
-      color: var(--cream);
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 20px;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
+    body { background: var(--black); color: var(--cream); font-family: 'Cormorant Garamond', Georgia, serif; font-size: 20px; line-height: 1.6; overflow-x: hidden; }
 
-    /* ═══════════════════════════════════════
-       KLARO OVERRIDES
-    ═══════════════════════════════════════ */
-    .klaro .cookie-notice, .klaro .cookie-modal .cm-modal {
-      background: var(--charcoal) !important; border-top: 1px solid var(--grey) !important;
-      color: var(--cream) !important; font-family: 'Cormorant Garamond', serif !important; border-radius: 0 !important;
-    }
-    .klaro .cm-btn.cm-btn-success { background: var(--lime) !important; color: var(--black) !important; font-family: 'JetBrains Mono', monospace !important; font-size: 0.75rem !important; letter-spacing: 0.08em !important; border-radius: 0 !important; border: none !important; }
-    .klaro .cm-btn.cm-btn-info, .klaro .cm-btn.cm-btn-decline { background: transparent !important; color: var(--muted) !important; font-family: 'JetBrains Mono', monospace !important; font-size: 0.72rem !important; border: 1px solid var(--grey) !important; border-radius: 0 !important; }
-    .klaro .cookie-modal h1, .klaro .cookie-modal h2 { font-family: 'Bebas Neue', sans-serif !important; color: var(--white) !important; }
-    .klaro .cm-switch input:checked + .cm-switch-label { background: var(--lime) !important; }
-
-    /* ═══════════════════════════════════════
-       LOCATION SCROLL COLUMN
-       Fixiert, rechts, volle Höhe.
-       Scrollt langsam von unten nach oben.
-    ═══════════════════════════════════════ */
-    .location-column {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 200px;
-      height: 100vh;
-      overflow: hidden;
-      z-index: 5;
-      pointer-events: none; /* kein Blockieren der Hauptinhalte */
-      /* sanftes Ausblenden oben + unten */
-      -webkit-mask-image: linear-gradient(
-        to bottom,
-        transparent 0%,
-        black 12%,
-        black 88%,
-        transparent 100%
-      );
-      mask-image: linear-gradient(
-        to bottom,
-        transparent 0%,
-        black 12%,
-        black 88%,
-        transparent 100%
-      );
-    }
-
-    .location-track {
-      display: flex;
-      flex-direction: column;
-      /* Animation: Höhe wird per JS gesetzt */
-      animation: locationScroll 90s linear infinite;
-    }
-
-    .location-item {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.78rem;
-      letter-spacing: 0.06em;
-      color: var(--cream);
-      opacity: 0.28;
-      padding: 0.45rem 1.25rem 0.45rem 0.75rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      pointer-events: auto; /* Hover reaktivieren */
-      transition: opacity 0.3s, color 0.3s;
-      cursor: default;
-      text-transform: uppercase;
-    }
-
-    .location-item:hover {
-      opacity: 1;
-      color: var(--lime);
-    }
-
-    @keyframes locationScroll {
-      from { transform: translateY(0); }
-      to   { transform: translateY(-50%); }
-    }
-
-    /* Auf kleinen Screens ausblenden */
-    @media (max-width: 1100px) {
-      .location-column { display: none; }
-    }
-
-    /* ═══════════════════════════════════════
-       LANGUAGE SWITCHER
-    ═══════════════════════════════════════ */
-    .lang-switcher { display: flex; align-items: center; gap: 0.4rem; }
-    .lang-btn {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.82rem; letter-spacing: 0.1em; color: #888;
-      background: none; border: none; cursor: pointer;
-      padding: 0.15rem 0; text-transform: uppercase; transition: color 0.2s;
-    }
-    .lang-btn.active { color: var(--lime); border-bottom: 1px solid var(--lime); }
+    /* HEADER */
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; background: rgba(8,8,8,0.88); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.04); }
+    .logo { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.08em; text-decoration: none; }
+    .logo-yes { color: var(--blue); }
+    .logo-domain { color: var(--white); }
+    nav.main-nav { display: flex; align-items: center; gap: 2rem; }
+    nav.main-nav a { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.12em; color: var(--muted); text-decoration: none; text-transform: uppercase; transition: color 0.2s; }
+    nav.main-nav a:hover { color: var(--white); }
+    .lang-switcher { display: flex; align-items: center; gap: 0.4rem; margin-left: 1.5rem; padding-left: 1.5rem; border-left: 1px solid var(--grey); }
+    .lang-btn { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.1em; color: var(--muted); background: none; border: none; cursor: pointer; padding: 0.15rem 0; text-transform: uppercase; transition: color 0.2s; }
+    .lang-btn.active { color: var(--blue); border-bottom: 1px solid var(--blue); }
     .lang-btn:hover:not(.active) { color: var(--cream); }
-    .lang-divider { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; color: var(--grey); }
+    .lang-divider { font-size: 0.65rem; color: var(--grey); }
+    .header-right { display: flex; align-items: center; }
 
-    /* ═══════════════════════════════════════
-       HEADER — nur Logo + Lang
-    ═══════════════════════════════════════ */
-    header {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      padding: 1.5rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+    /* HERO */
+    .hero { height: 100svh; min-height: 640px; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(24,160,251,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(24,160,251,0.04) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; }
+    .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 35%; background: linear-gradient(to top, var(--black), transparent); pointer-events: none; }
+    .hero-content { display: flex; flex-direction: column; padding: 5rem 2rem 0; max-width: 1100px; margin: 0 auto; width: 100%; position: relative; z-index: 1; }
+    .hero-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: clamp(0.65rem,1.4vh,0.85rem); letter-spacing: 0.2em; color: var(--blue); text-transform: uppercase; margin-bottom: clamp(0.75rem,1.5vh,1.5rem); opacity: 0; animation: fadeUp 0.8s ease 0.3s forwards; }
+    .hero-title { font-family: 'Bebas Neue', sans-serif; line-height: 0.88; letter-spacing: -0.02em; opacity: 0; animation: fadeUp 0.8s ease 0.5s forwards; }
+    .hero-title .t-yes    { display: block; font-size: clamp(3rem,min(19vw,19vh),19rem); color: var(--blue); }
+    .hero-title .t-global { display: block; font-size: clamp(2rem,min(12vw,12vh),12rem); color: var(--white); }
+    .hero-title .t-rsvp   { display: block; font-size: clamp(1.2rem,min(5vw,5vh),5rem); color: var(--cream); opacity: 0.4; letter-spacing: 0.05em; }
+    .hero-tagline { margin-top: clamp(1.5rem,3vh,3rem); font-family: 'Cormorant Garamond', serif; font-size: clamp(1.1rem,min(2.2vw,2.5vh),1.6rem); font-weight: 400; color: var(--white); max-width: 600px; opacity: 0; animation: fadeUp 0.8s ease 0.65s forwards; }
+    .hero-sub { margin-top: clamp(0.75rem,1.5vh,1.5rem); font-size: clamp(0.95rem,min(1.8vw,2vh),1.2rem); font-weight: 300; font-style: italic; color: rgba(242,237,228,0.6); max-width: 520px; opacity: 0; animation: fadeUp 0.8s ease 0.75s forwards; }
+    .hero-cta { margin-top: clamp(2rem,4vh,4rem); display: flex; gap: 1rem; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.8s ease 0.9s forwards; }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
 
-    /* Logo: YES in Lime, berlin.rsvp in Cream */
-    .logo {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.85rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-decoration: none;
-    }
-    .logo-yes    { color: var(--lime); }
-    .logo-domain { color: var(--lime); }
+    /* BUTTONS */
+    .btn-primary { display: inline-block; background: var(--blue); color: var(--black); font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; padding: 1rem 2.5rem; border: none; cursor: pointer; transition: background 0.2s; }
+    .btn-primary:hover { background: var(--blue-dim); }
+    .btn-outline { display: inline-block; background: transparent; color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; padding: 1rem 2rem; border: 1px solid var(--grey); transition: color 0.2s, border-color 0.2s; }
+    .btn-outline:hover { color: var(--cream); border-color: var(--muted); }
 
-    /* ═══════════════════════════════════════
-       HERO — zentriert, Titel skaliert mit min(vw,vh)
-    ═══════════════════════════════════════ */
-    .hero {
-      height: 100svh;
-      min-height: 600px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
+    /* TICKER */
+    .ticker-section { position: relative; z-index: 10; background: var(--charcoal); border-top: 1px solid var(--grey); border-bottom: 1px solid var(--grey); padding: 1.25rem 0; overflow: hidden; white-space: nowrap; }
+    .ticker-track { display: inline-flex; gap: 3rem; animation: ticker 45s linear infinite; }
+    .ticker-item { font-family: 'Bebas Neue', sans-serif; font-size: 1.25rem; letter-spacing: 0.1em; color: var(--muted); }
+    .ticker-item.accent { color: var(--blue); }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-    .hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background-image:
-        linear-gradient(rgba(212, 245, 60, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(212, 245, 60, 0.03) 1px, transparent 1px);
-      background-size: 60px 60px;
-      pointer-events: none;
-    }
+    /* SHARED SECTION */
+    .section-inner { max-width: 1100px; margin: 0 auto; width: 100%; }
+    .section-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.2em; color: var(--blue); text-transform: uppercase; display: block; margin-bottom: 1rem; text-align: center; }
+    .section-h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem,5vw,4.5rem); color: var(--white); line-height: 1; letter-spacing: 0.02em; text-align: center; margin-bottom: 0.75rem; }
+    .section-sub { font-family: 'Cormorant Garamond', serif; font-size: clamp(1rem,2.2vw,1.3rem); font-weight: 300; font-style: italic; color: rgba(242,237,228,0.6); text-align: center; max-width: 600px; margin: 0 auto 3.5rem; }
 
-    .hero-content {
-      display: flex;
-      flex-direction: column;
-      padding: 5rem 2rem 0;
-      max-width: 1100px;
-      margin: 0 auto;
-      width: 100%;
-    }
+    /* GUIDE */
+    .guide-section { position: relative; z-index: 10; background: var(--black); padding: 7rem 2rem; border-top: 1px solid var(--grey); }
+    .guide-body { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.1rem,2.2vw,1.4rem); font-weight: 300; color: rgba(242,237,228,0.8); line-height: 1.85; max-width: 720px; margin: 0 auto; text-align: center; }
+    .guide-body strong { color: var(--white); font-weight: 400; }
 
-    .hero-eyebrow {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: clamp(0.65rem, 1.4vh, 0.85rem);
-      letter-spacing: 0.2em; color: var(--lime);
-      text-transform: uppercase; margin-bottom: clamp(0.75rem, 1.5vh, 1.5rem);
-      opacity: 0; animation: fadeUp 0.8s ease 0.3s forwards;
-    }
+    /* TECH */
+    .tech-section { position: relative; z-index: 10; background: var(--charcoal); padding: 7rem 2rem; border-top: 1px solid var(--grey); }
+    .card-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--grey); border: 1px solid var(--grey); margin-top: 0; }
+    .card { background: var(--black); padding: 2.5rem 2rem; transition: background 0.25s; }
+    .card:hover { background: #0d0d0d; }
+    .card-number { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: var(--grey); line-height: 1; margin-bottom: 1rem; }
+    .card-title { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue); margin-bottom: 0.85rem; }
+    .card-text { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 300; color: rgba(242,237,228,0.7); line-height: 1.7; }
 
-    .hero-title {
-      font-family: 'Bebas Neue', sans-serif;
-      line-height: 0.88; letter-spacing: -0.02em;
-      opacity: 0; animation: fadeUp 0.8s ease 0.5s forwards;
-    }
-    .hero-title .title-yes {
-      display: block;
-      font-size: clamp(3rem, min(19vw, 19vh), 19rem);
-      color: var(--lime);
-    }
-    .hero-title .title-berlin {
-      display: block;
-      font-size: clamp(4.5rem, min(23vw, 23vh), 23rem);
-      color: var(--white);
-    }
-    .hero-title .title-rsvp {
-      display: block;
-      font-size: clamp(1.2rem, min(6vw, 6vh), 6rem);
-      color: var(--cream);
-      opacity: 0.5;
-      letter-spacing: 0.05em;
-    }
+    /* CITIES */
+    .cities-section { position: relative; z-index: 10; background: var(--black); padding: 7rem 2rem; border-top: 1px solid var(--grey); }
+    .cities-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--grey); border: 1px solid var(--grey); }
+    .city-card { background: var(--charcoal); padding: 2.5rem 2rem; display: flex; flex-direction: column; gap: 1rem; transition: background 0.25s; text-decoration: none; }
+    .city-card:hover { background: #161616; }
+    .city-status { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.75rem; display: inline-block; align-self: flex-start; }
+    .city-status.live { color: var(--blue); border: 1px solid var(--blue); }
+    .city-status.soon { color: var(--muted); border: 1px solid var(--grey); }
+    .city-status.open { color: rgba(242,237,228,0.35); border: 1px solid rgba(255,255,255,0.08); }
+    .city-name { font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; color: var(--white); line-height: 1; }
+    .city-card.live-card .city-name { color: var(--blue); }
+    .city-url { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.06em; color: var(--muted); }
 
-    .hero-subtitle {
-      margin-top: clamp(1rem, 2vh, 2.5rem);
-      margin-bottom: clamp(3.5rem, 7vh, 7rem);
-      font-size: clamp(1rem, min(2vw, 2.2vh), 1.45rem);
-      font-weight: 300; font-style: italic;
-      color: rgba(242, 237, 228, 0.72);
-      max-width: 520px;
-      opacity: 0; animation: fadeUp 0.8s ease 0.7s forwards;
-    }
+    /* PARTNERSHIPS */
+    .partners-section { position: relative; z-index: 10; background: var(--charcoal); padding: 7rem 2rem; border-top: 1px solid var(--grey); }
+    .partner-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--grey); border: 1px solid var(--grey); }
+    .partner-card { background: var(--black); padding: 2.5rem 2rem; transition: background 0.25s; }
+    .partner-card:hover { background: #0d0d0d; }
+    .partner-arrow { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; letter-spacing: 0.15em; color: var(--blue); text-transform: uppercase; margin-bottom: 1.25rem; display: block; }
+    .partner-title { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--white); margin-bottom: 0.85rem; }
+    .partner-text { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 300; color: rgba(242,237,228,0.65); line-height: 1.7; }
+    .partner-cta { text-align: center; margin-top: 3.5rem; }
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+    /* CTA */
+    .cta-section { position: relative; z-index: 10; background: var(--black); padding: 9rem 2rem; border-top: 1px solid var(--grey); text-align: center; overflow: hidden; }
+    .cta-section::before { content: 'YES'; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-family: 'Bebas Neue', sans-serif; font-size: clamp(10rem,35vw,36rem); color: rgba(24,160,251,0.03); pointer-events: none; white-space: nowrap; }
+    .cta-label { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.2em; color: var(--blue); text-transform: uppercase; display: block; margin-bottom: 1.5rem; }
+    .cta-h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem,5vw,4rem); font-weight: 300; font-style: italic; color: var(--white); margin-bottom: 0.75rem; }
+    .cta-sub { font-family: 'Cormorant Garamond', serif; font-size: clamp(1rem,2vw,1.25rem); font-weight: 300; color: rgba(242,237,228,0.55); margin-bottom: 3rem; }
 
-    /* ═══════════════════════════════════════
-       FORM SECTION
-    ═══════════════════════════════════════ */
-    .form-section {
-      padding: 0 2rem clamp(1rem, 2vh, 2rem);
-      max-width: 1100px; margin: 0 auto; width: 100%;
-      opacity: 0; animation: fadeUp 0.8s ease 0.9s forwards;
-    }
-
-    .form-label {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.82rem; letter-spacing: 0.15em; color: #888;
-      text-transform: uppercase; display: block; margin-bottom: 1rem;
-    }
-
-    .form-row { display: flex; gap: 0; max-width: 520px; }
-    .form-row input[type="email"] {
-      flex: 1; background: var(--charcoal);
-      border: 1px solid var(--grey); border-right: none;
-      color: var(--cream); font-family: 'Cormorant Garamond', serif;
-      font-size: 1rem; padding: 0.9rem 1.25rem; outline: none; transition: border-color 0.2s;
-    }
-    .form-row input[type="email"]::placeholder { color: var(--muted); font-style: italic; }
-    .form-row input[type="email"]:focus { border-color: var(--lime); }
-    .form-row button {
-      background: var(--lime); color: var(--black); border: none;
-      padding: 0.9rem 1.75rem; font-family: 'JetBrains Mono', monospace;
-      font-size: 0.8rem; font-weight: 500; letter-spacing: 0.08em;
-      cursor: pointer; text-transform: uppercase; transition: background 0.2s; white-space: nowrap;
-    }
-    .form-row button:hover { background: var(--lime-dim); }
-
-    .form-note {
-      margin-top: 0.85rem; font-size: 0.92rem; color: #888; font-style: italic;
-    }
-    .form-note a { color: #888; text-decoration: underline; transition: color 0.2s; }
-    .form-note a:hover { color: var(--cream); }
-
-    /* ═══════════════════════════════════════
-       TICKER
-    ═══════════════════════════════════════ */
-    .ticker-section {
-      position: relative; z-index: 10; background: var(--black);
-      border-top: 1px solid var(--grey); border-bottom: 1px solid var(--grey);
-      padding: 1.25rem 0; overflow: hidden; white-space: nowrap;
-    }
-    .ticker-track { display: inline-flex; gap: 3rem; animation: ticker 30s linear infinite; }
-    .ticker-item { font-family: 'Bebas Neue', sans-serif; font-size: 1.25rem; letter-spacing: 0.1em; color: #888; }
-    .ticker-item.accent { color: var(--lime); }
-    @keyframes ticker {
-      from { transform: translateX(0); }
-      to   { transform: translateX(-50%); }
-    }
-
-    /* ═══════════════════════════════════════
-       VALUE PROPS
-    ═══════════════════════════════════════ */
-    .props-section {
-      position: relative; z-index: 10; background: var(--black);
-      padding: 6rem 2rem;
-      max-width: 100%; margin: 0 auto;
-      border-top: 1px solid var(--grey);
-    }
-    .props-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .props-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
-    .prop { display: flex; flex-direction: column; gap: 1rem; }
-    .prop-number { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; color: #3a3a3a; line-height: 1; }
-    .prop-title { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--lime); }
-    .prop-text { font-size: 1.05rem; color: rgba(242, 237, 228, 0.82); font-weight: 300; line-height: 1.7; }
-
-    /* ═══════════════════════════════════════
-       CTA
-    ═══════════════════════════════════════ */
-    .cta-section {
-      position: relative; z-index: 10; background: var(--black);
-      padding: 8rem 2rem; text-align: center;
-      border-top: 1px solid var(--grey);
-      overflow: hidden;
-    }
-    .cta-section::before {
-      content: 'YES';
-      position: absolute; top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(10rem, 35vw, 36rem);
-      color: rgba(212, 245, 60, 0.03);
-      pointer-events: none; white-space: nowrap;
-    }
-    .cta-section h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 4vw, 3.5rem); font-weight: 300; font-style: italic; color: var(--white); margin-bottom: 0.5rem; }
-    .cta-section > p { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; letter-spacing: 0.15em; color: var(--lime); text-transform: uppercase; margin-bottom: 3rem; }
-    .cta-form { display: inline-flex; gap: 0; max-width: 480px; width: 100%; }
-    .cta-form input[type="email"] {
-      flex: 1; background: var(--charcoal); border: 1px solid var(--grey); border-right: none;
-      color: var(--cream); font-family: 'Cormorant Garamond', serif; font-size: 1rem;
-      padding: 0.9rem 1.25rem; outline: none; transition: border-color 0.2s;
-    }
-    .cta-form input[type="email"]::placeholder { color: var(--muted); font-style: italic; }
-    .cta-form input[type="email"]:focus { border-color: var(--lime); }
-    .cta-form button { background: var(--lime); color: var(--black); border: none; padding: 0.9rem 1.75rem; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.08em; cursor: pointer; text-transform: uppercase; transition: background 0.2s; }
-    .cta-form button:hover { background: var(--lime-dim); }
-
-    /* ═══════════════════════════════════════
-       FOOTER
-    ═══════════════════════════════════════ */
-    footer {
-      position: relative; z-index: 10; background: var(--black);
-      border-top: 1px solid var(--grey);
-      padding: 2rem;
-      max-width: 100%; margin: 0 auto;
-      display: flex; justify-content: space-between; align-items: center;
-      flex-wrap: wrap; gap: 1rem;
-    }
-    .footer-left { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #888; }
+    /* FOOTER */
+    footer { position: relative; z-index: 10; background: var(--black); border-top: 1px solid var(--grey); padding: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-left { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--muted); }
     .footer-right { display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; }
-    .footer-right a { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #888; text-decoration: none; letter-spacing: 0.05em; transition: color 0.2s; }
+    .footer-right a { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--muted); text-decoration: none; letter-spacing: 0.05em; transition: color 0.2s; }
     .footer-right a:hover { color: var(--cream); }
-    .klaro-open-btn { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #888; background: none; border: none; cursor: pointer; letter-spacing: 0.05em; transition: color 0.2s; padding: 0; }
-    .klaro-open-btn:hover { color: var(--cream); }
 
-    /* ═══════════════════════════════════════
-       RESPONSIVE
-    ═══════════════════════════════════════ */
-    @media (max-width: 768px) {
-      header { padding: 1.25rem; }
-      .hero-content { padding: 7rem 1.25rem 2rem; }
-      .form-section { padding: 2rem 1.25rem 3rem; }
-      .form-row { max-width: 100%; }
-      .props-section { padding: 3.5rem 1.25rem; }
-      .props-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .cta-section { padding: 5rem 1.25rem; }
-      .cta-form { flex-direction: column; }
-      .cta-form input[type="email"] { border-right: 1px solid var(--grey); border-bottom: none; }
-      footer { flex-direction: column; align-items: flex-start; padding: 2rem 1.25rem; }
-    }
+    /* RESPONSIVE */
+    @media (max-width: 900px) { nav.main-nav { display: none; } .card-grid, .cities-grid, .partner-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { header { padding: 1.25rem; } .hero-content { padding: 7rem 1.25rem 2rem; } .guide-section, .tech-section, .cities-section, .partners-section, .cta-section { padding: 5rem 1.25rem; } footer { flex-direction: column; align-items: flex-start; padding: 2rem 1.25rem; } }
   </style>
 </head>
-
 <body>
 
-  <!-- GTM NoScript -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-  <!-- ═══════════════════════════════════════
-       LOCATION SCROLL COLUMN (rechts, fix)
-  ═══════════════════════════════════════ -->
-  <aside class="location-column" aria-hidden="true">
-    <div class="location-track" id="location-track">
-      <!-- Wird per JS befüllt (2× für nahtlosen Loop) -->
-    </div>
-  </aside>
-
-  <!-- ═══ HEADER — Logo + Lang ═══ -->
   <header>
-    <a href="/" class="logo">
-      <span class="logo-yes">YES</span><span class="logo-domain">berlin.rsvp</span>
-    </a>
-    <div class="lang-switcher" role="group" aria-label="Sprache / Language">
-      <button class="lang-btn active" id="btn-de" onclick="setLang('de')">DE</button>
-      <span class="lang-divider">|</span>
-      <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+    <a href="/" class="logo"><span class="logo-yes">YES </span><span class="logo-domain">GLOBAL.rsvp</span></a>
+    <nav class="main-nav">
+      <a href="#cities" data-i18n="nav.cities">Cities</a>
+      <a href="#technology" data-i18n="nav.tech">Technology</a>
+      <a href="#partnerships" data-i18n="nav.partners">Partnerships</a>
+    </nav>
+    <div class="header-right">
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-de" onclick="setLang('de')">DE</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
     </div>
   </header>
 
-  <!-- ═══ HERO ═══ -->
   <section class="hero">
     <div class="hero-content">
-      <span class="hero-eyebrow" data-i18n="hero.eyebrow">Der Event-Newsletter für Berlin</span>
+      <span class="hero-eyebrow" data-i18n="hero.eyebrow">Lebe Kultur, lebe deine Stadt.</span>
       <h1 class="hero-title">
-        <span class="title-yes">YES</span>
-        <span class="title-berlin">BERLIN</span>
-        <span class="title-rsvp">.rsvp</span>
+        <span class="t-yes">YES</span>
+        <span class="t-global">GLOBAL</span>
+        <span class="t-rsvp">.rsvp</span>
       </h1>
-      <p class="hero-subtitle" data-i18n-html="hero.subtitle">
-        Kein Algorithmus. Kein Spam. Kein BS.<br>Dafür alle Events in Berlin.
-      </p>
-    </div>
-
-    <div class="form-section" id="anmelden">
-      <span class="form-label" data-i18n="form.label">Jetzt anmelden — kostenlos</span>
-
-      <!-- Brevo success/error messages — styled in unserem Design -->
-      <div id="brevo-success" style="display:none; font-family:'JetBrains Mono',monospace; font-size:0.82rem; letter-spacing:0.08em; color:var(--lime); text-transform:uppercase; margin-bottom:1rem;">
-        ✓ Fast geschafft — bitte bestätige deine E-Mail.
-      </div>
-      <div id="brevo-error" style="display:none; font-family:'JetBrains Mono',monospace; font-size:0.82rem; letter-spacing:0.08em; color:#FF003C; text-transform:uppercase; margin-bottom:1rem;">
-        ✗ Etwas hat nicht geklappt — bitte erneut versuchen.
-      </div>
-
-      <!-- DE Formular -->
-      <form id="form-de" class="form-row"
-        method="POST"
-        action="https://455f9199.sibforms.com/serve/MUIFAOfjQVo5gGOk4Im8jI3jSHuj3sIqwnaYcroIBD_o8_fZKyCaFWNWOHCaMbSzWUNrQEJFY3X2K71TQYV4xQ9s7sRCU51pGwoakW-WlVqS6pMi_xoqnRu5YlIEv5TIZZ8npm5yPUQNt7ZV_ReqhrPjxkZRic-ClKXmA6670WeYE6LXrOTwppq3_AwBFLWyJ5P2Ykinqj4J9bXzNw=="
-        data-type="subscription">
-        <input type="email" name="EMAIL" placeholder="deine@email.de" aria-label="E-Mail-Adresse" required>
-        <button type="submit" data-i18n="form.button">Anmelden</button>
-        <!-- Brevo Honeypot (versteckt) -->
-        <input type="text" name="email_address_check" value="" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <!-- Unser eigener Honeypot -->
-        <input type="text" name="b_confirm" value="" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input type="hidden" name="locale" value="de">
-      </form>
-
-      <!-- EN Formular -->
-      <form id="form-en" class="form-row" style="display:none;"
-        method="POST"
-        action="https://455f9199.sibforms.com/serve/MUIFAOfjQVo5gGOk4Im8jI3jSHuj3sIqwnaYcroIBD_o8_fZKyCaFWNWOHCaMbSzWUNrQEJFY3X2K71TQYV4xQ9s7sRCU51pGwoakW-WlVqS6pMi_xoqnRu5YlIEv5TIZZ8npm5yPUQNt7ZV_ReqhrPjxkZRic-ClKXmA6670WeYE6LXrOTwppq3_AwBFLWyJ5P2Ykinqj4J9bXzNw=="
-        data-type="subscription">
-        <input type="email" name="EMAIL" placeholder="your@email.com" aria-label="Email address" required>
-        <button type="submit">Subscribe</button>
-        <input type="text" name="email_address_check" value="" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input type="text" name="b_confirm" value="" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input type="hidden" name="locale" value="en">
-      </form>
-
-      <p class="form-note" data-i18n-html="form.note">
-        Mit der Anmeldung stimmst du unserer <a href="datenschutz.html">Datenschutzerklärung</a> zu.
-        Abmeldung jederzeit mit einem Klick. Enthält gelegentlich Affiliate-Links.
-      </p>
+      <p class="hero-tagline" data-i18n="hero.tagline">Wir erstellen Newsletter für Musik, Kunst und Kultur.</p>
+      <p class="hero-sub" data-i18n="hero.sub">Verpasse nichts, was dein Leben bereichert.</p>
     </div>
   </section>
 
-  <!-- ═══ VALUE PROPS ═══ -->
-  <section class="props-section">
-    <div class="props-inner">
-    <div class="props-grid">
-      <div class="prop">
-        <div class="prop-number">01</div>
-        <div class="prop-title" data-i18n="props.curated.title">Kuratiert</div>
-        <p class="prop-text" data-i18n="props.curated.text">
-          Kein Algorithmus entscheidet, was du siehst. Jedes Event wird manuell
-          geprüft. Nach Qualität, nicht nach Klickwahrscheinlichkeit.
-        </p>
-      </div>
-      <div class="prop">
-        <div class="prop-number">02</div>
-        <div class="prop-title" data-i18n="props.complete.title">Vollständig</div>
-        <p class="prop-text" data-i18n="props.complete.text">
-          Von Berghain bis Berliner Philharmoniker, vom Flohmarkt bis zum
-          Startup-Pitch. Berlin passiert jeden Tag. Du verpasst nichts davon.
-        </p>
-      </div>
-      <div class="prop">
-        <div class="prop-number">03</div>
-        <div class="prop-title" data-i18n="props.reliable.title">Verlässlich</div>
-        <p class="prop-text" data-i18n="props.reliable.text">
-          Montags die nächsten 10 Tage. Donnerstags die nächsten 6 Tage.
-          Kein Social-Media-Rauschen. Nur dein persönliches Event-Radar.
-        </p>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- ═══ TICKER ═══ -->
   <div class="ticker-section" aria-hidden="true">
     <div class="ticker-track">
-      <span class="ticker-item accent">🎵 Music</span><span class="ticker-item">·</span>
-      <span class="ticker-item">🎧 Nightlife</span><span class="ticker-item">·</span>
-      <span class="ticker-item accent">🎪 Festivals</span><span class="ticker-item">·</span>
-      <span class="ticker-item">🎭 Performing Arts</span><span class="ticker-item">·</span>
-      <span class="ticker-item accent">🎨 Arts & Culture</span><span class="ticker-item">·</span>
-      <span class="ticker-item">🛍️ Markets & Fairs</span><span class="ticker-item">·</span>
-      <span class="ticker-item accent">🚀 Growth</span><span class="ticker-item">·</span>
-      <span class="ticker-item">👨‍👩‍👧 Kids & Family</span><span class="ticker-item">·</span>
-      <span class="ticker-item accent">🏙️ City Life</span><span class="ticker-item">·</span>
-      <span class="ticker-item accent">🎵 Music</span><span class="ticker-item">·</span>
-      <span class="ticker-item">🎧 Nightlife</span><span class="ticker-item">·</span>
-      <span class="ticker-item accent">🎪 Festivals</span><span class="ticker-item">·</span>
-      <span class="ticker-item">🎭 Performing Arts</span><span class="ticker-item">·</span>
-      <span class="ticker-item accent">🎨 Arts & Culture</span><span class="ticker-item">·</span>
-      <span class="ticker-item">🛍️ Markets & Fairs</span><span class="ticker-item">·</span>
-      <span class="ticker-item accent">🚀 Growth</span><span class="ticker-item">·</span>
-      <span class="ticker-item">👨‍👩‍👧 Kids & Family</span><span class="ticker-item">·</span>
-      <span class="ticker-item accent">🏙️ City Life</span><span class="ticker-item">·</span>
+      <span class="ticker-item accent">ELEKTRONIK</span><span class="ticker-item">—</span>
+      <span class="ticker-item">JAZZ</span><span class="ticker-item">—</span>
+      <span class="ticker-item">KLASSIK</span><span class="ticker-item">—</span>
+      <span class="ticker-item">ZEITGENOSSISCHE KUNST</span><span class="ticker-item">—</span>
+      <span class="ticker-item">THEATER</span><span class="ticker-item">—</span>
+      <span class="ticker-item">OPER</span><span class="ticker-item">—</span>
+      <span class="ticker-item">TECHNO</span><span class="ticker-item">—</span>
+      <span class="ticker-item">AUSSTELLUNGEN</span><span class="ticker-item">—</span>
+      <span class="ticker-item">HIP HOP</span><span class="ticker-item">—</span>
+      <span class="ticker-item">PERFORMANCE</span><span class="ticker-item">—</span>
+      <span class="ticker-item accent">INDIE</span><span class="ticker-item">—</span>
+      <span class="ticker-item">COMEDY</span><span class="ticker-item">—</span>
+      <span class="ticker-item">FILM</span><span class="ticker-item">—</span>
+      <span class="ticker-item">LITERATUR</span><span class="ticker-item">—</span>
+      <span class="ticker-item accent">ELEKTRONIK</span><span class="ticker-item">—</span>
+      <span class="ticker-item">JAZZ</span><span class="ticker-item">—</span>
+      <span class="ticker-item">KLASSIK</span><span class="ticker-item">—</span>
+      <span class="ticker-item">ZEITGENOSSISCHE KUNST</span><span class="ticker-item">—</span>
+      <span class="ticker-item">THEATER</span><span class="ticker-item">—</span>
+      <span class="ticker-item">OPER</span><span class="ticker-item">—</span>
+      <span class="ticker-item">TECHNO</span><span class="ticker-item">—</span>
+      <span class="ticker-item">AUSSTELLUNGEN</span><span class="ticker-item">—</span>
+      <span class="ticker-item">HIP HOP</span><span class="ticker-item">—</span>
+      <span class="ticker-item">PERFORMANCE</span><span class="ticker-item">—</span>
+      <span class="ticker-item accent">INDIE</span><span class="ticker-item">—</span>
+      <span class="ticker-item">COMEDY</span><span class="ticker-item">—</span>
+      <span class="ticker-item">FILM</span><span class="ticker-item">—</span>
+      <span class="ticker-item">LITERATUR</span><span class="ticker-item">—</span>
     </div>
   </div>
-  <section class="cta-section">
-    <h2 data-i18n="cta.title">Bereit für Berlin?</h2>
-    <p data-i18n="cta.subtitle">Kostenlos · Direkt in dein Postfach · Jederzeit abmeldbar</p>
-    <form class="cta-form"
-      method="POST"
-      action="https://455f9199.sibforms.com/serve/MUIFAOfjQVo5gGOk4Im8jI3jSHuj3sIqwnaYcroIBD_o8_fZKyCaFWNWOHCaMbSzWUNrQEJFY3X2K71TQYV4xQ9s7sRCU51pGwoakW-WlVqS6pMi_xoqnRu5YlIEv5TIZZ8npm5yPUQNt7ZV_ReqhrPjxkZRic-ClKXmA6670WeYE6LXrOTwppq3_AwBFLWyJ5P2Ykinqj4J9bXzNw=="
-      data-type="subscription">
-      <input type="email" id="cta-input" name="EMAIL" placeholder="deine@email.de" aria-label="E-Mail-Adresse" required>
-      <button type="submit" data-i18n="form.button">Anmelden</button>
-      <input type="text" name="email_address_check" value="" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <input type="text" name="b_confirm" value="" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <input type="hidden" name="locale" value="de" id="cta-locale">
-    </form>
+
+  <section class="guide-section">
+    <div class="section-inner">
+      <span class="section-eyebrow" data-i18n="guide.eyebrow">Wer wir sind</span>
+      <h2 class="section-h2" data-i18n="guide.headline">Kulturleben sollte keine Vollzeitbeschäftigung sein.</h2>
+      <p class="guide-body" data-i18n-html="guide.body">Von <strong>Stadtmenschen für Stadtmenschen</strong>: Wir wissen, wie frustrierend es ist, großartige Events zu verpassen. Wir haben eine Technologie entwickelt, die hunderte Events kuratiert, damit du es nicht musst. Das Ergebnis ist ein Newsletter, den du <strong>personalisieren und vertrauen</strong> kannst.</p>
+    </div>
   </section>
 
-  <!-- ═══ FOOTER ═══ -->
+  <section class="tech-section" id="technology">
+    <div class="section-inner">
+      <span class="section-eyebrow" data-i18n="tech.eyebrow">Die Technologie dahinter</span>
+      <h2 class="section-h2" data-i18n="tech.headline">Wir haben die Arbeit gemacht. Du genießt das Ergebnis.</h2>
+      <p class="section-sub" data-i18n="tech.sub">Hinter jedem YES Newsletter steckt ein System, das niemals schläft.</p>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-number">01</div>
+          <div class="card-title" data-i18n="tech.card1.title">Echtzeit-Daten</div>
+          <p class="card-text" data-i18n="tech.card1.text">Hunderte von Quellen. Eine Inbox. Wir verarbeiten Events aus der gesamten Stadt, von Ticketplattformen bis Kulturinstitutionen, in Echtzeit.</p>
+        </div>
+        <div class="card">
+          <div class="card-number">02</div>
+          <div class="card-title" data-i18n="tech.card2.title">Kuratierung &amp; Klassifizierung</div>
+          <p class="card-text" data-i18n="tech.card2.text">Wir kuratieren und klassifizieren jeden Event für unsere User, damit du immer genau das findest, was zu dir passt.</p>
+        </div>
+        <div class="card">
+          <div class="card-number">03</div>
+          <div class="card-title" data-i18n="tech.card3.title">Persönlich &amp; Kostenlos</div>
+          <p class="card-text" data-i18n="tech.card3.text">Unsere Inhalte passen sich deinen Interessen und Bedürfnissen an. Ein Newsletter, dem User vertrauen können — kostenlos für immer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cities-section" id="cities">
+    <div class="section-inner">
+      <span class="section-eyebrow" data-i18n="cities.eyebrow">Unsere Städte</span>
+      <h2 class="section-h2" data-i18n="cities.headline">Lokal verbunden. Global gedacht.</h2>
+      <p class="section-sub" data-i18n="cities.sub">Jede YES-Stadt ist ein eigenständiges Produkt, gebaut für die Kultur und den Rhythmus dieser Stadt.</p>
+      <div class="cities-grid">
+        <a href="https://yesberlin.rsvp" class="city-card live-card" style="background: #D4F53C;">
+          <span class="city-status live" style="color: #080808; border-color: #080808;" data-i18n="cities.status.live">Live</span>
+          <div class="city-name" style="color: #080808;">BERLIN</div>
+          <div class="city-url" style="color: rgba(8,8,8,0.55);">yesberlin.rsvp</div>
+        </a>
+        <div class="city-card" style="filter: blur(4px); pointer-events: none; user-select: none;">
+          <span class="city-status soon" data-i18n="cities.status.soon">Demnächst</span>
+          <div class="city-name">STUTTGART</div>
+          <div class="city-url">yesstuttgart.rsvp</div>
+        </div>
+        <a href="mailto:partnerships@yesglobal.rsvp" class="city-card">
+          <span class="city-status open" data-i18n="cities.status.open">Get in Touch</span>
+          <div class="city-name" data-i18n="cities.your_city">Deine Stadt?</div>
+          <div class="city-url">partnerships@yesglobal.rsvp</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners-section" id="partnerships">
+    <div class="section-inner">
+      <span class="section-eyebrow" data-i18n="partners.eyebrow">Partner werden</span>
+      <h2 class="section-h2" data-i18n="partners.headline">Gemeinsam mehr erreichen.</h2>
+      <p class="section-sub" data-i18n="partners.sub">Du bist Venue, Ticketplattform, Kulturinstitution oder Stadtmarke? Lass uns reden.</p>
+      <div class="partner-grid">
+        <div class="partner-card">
+          <span class="partner-arrow">→ Venues &amp; Ticketing</span>
+          <div class="partner-title" data-i18n="partners.card1.title">Für Venues &amp; Ticketing</div>
+          <p class="partner-text" data-i18n="partners.card1.text">Bring deine Events vor das richtige Publikum. YES-Leser sind aktiv, kulturinteressiert und kaufbereit.</p>
+        </div>
+        <div class="partner-card">
+          <span class="partner-arrow">→ Städte &amp; Institutionen</span>
+          <div class="partner-title" data-i18n="partners.card2.title">Für Städte &amp; Institutionen</div>
+          <p class="partner-text" data-i18n="partners.card2.text">Du vertrittst eine Stadt, ein Kulturamt oder eine Tourismusbehörde? Wir bauen maßgeschneiderte Lösungen.</p>
+        </div>
+        <div class="partner-card">
+          <span class="partner-arrow">→ Local Business</span>
+          <div class="partner-title" data-i18n="partners.card3.title">Für lokale Unternehmen</div>
+          <p class="partner-text" data-i18n="partners.card3.text">Du bist ein lokales Unternehmen und möchtest kulturinteressierte Menschen in deiner Stadt erreichen? Wir sind dein Partner.</p>
+        </div>
+      </div>
+      <div class="partner-cta">
+        <a href="mailto:partnerships@yesglobal.rsvp" class="btn-primary" data-i18n="partners.cta">Jetzt anfragen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="section-inner">
+      <span class="cta-label" data-i18n="cta.eyebrow">Bereit?</span>
+      <h2 class="cta-h2" data-i18n="cta.headline">Bereit, deine Stadt wirklich zu erleben?</h2>
+      <p class="cta-sub" data-i18n="cta.sub">Starte mit Berlin oder trag dich für die nächste Stadt ein.</p>
+      <a href="https://yesberlin.rsvp" class="btn-primary" data-i18n="cta.btn">Zu YesBerlin →</a>
+    </div>
+  </section>
+
   <footer>
-    <div class="footer-left">© <span id="year"></span> yesberlin.rsvp</div>
+    <div class="footer-left">© 2026 YES Global. All rights reserved.</div>
     <nav class="footer-right">
-      <a href="impressum.html" data-i18n="nav.imprint">Impressum</a>
-      <a href="datenschutz.html" data-i18n="nav.privacy">Datenschutz</a>
-      <button class="klaro-open-btn" onclick="klaro.show()" data-i18n="footer.cookie_settings">
-        Cookie-Einstellungen
-      </button>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="https://yesberlin.rsvp">yesberlin.rsvp</a>
     </nav>
   </footer>
 
-  <!-- ═══════════════════════════════════════
-       LOCATION LIST DATA
-  ═══════════════════════════════════════ -->
-  <script>
-    const LOCATIONS = [
-      "Schlosspark Theater","Huxleys Neue Welt","Astra Kulturhaus","100 Gramm",
-      "Columbia Theater","Hafenbar","Ritter Butzke Club Berlin","Tränenpalast - Berlin",
-      "Gorki Theater","Philharmonie Berlin – Kammermusiksaal","Humboldthain",
-      "Friedrichstadt-Palast","Theater am Frankfurter Tor","Cassiopeia",
-      "Bar jeder Vernunft","SO36","8MM Bar","The Wall Comedy Club","Kabarett-Theater Distel",
-      "Berliner Kriminal Theater","Max-Schmeling-Halle","Schaubühne Berlin",
-      "Deutsches Theater — Rangfoyer","Wintergarten Varieté Berlin","Amano Grand Central",
-      "Kater Blau","Bar Tausend","P61 Gallery","Quasimodo","Waldbühne Berlin",
-      "Matrix","Abgedreht","A-Trane","Arena Berlin","The Door","Astra Berlin",
-      "Im Theaterzelt in Steglitz-Zehlendorf","Bricks","Staatsoper Unter den Linden",
-      "Komödie am Kurfürstendamm","Bussi Bar","Silent Green Kulturquartier","Denizen",
-      "KitKat","Sisyfass","Gretchen","Komische Oper Berlin","Philharmonie Berlin",
-      "Downstairs Comedy Club","Uber Arena Berlin","Festsaal Kreuzberg","Tempodrom Berlin",
-      "M-Bia","Old CCCP","The Floating Lounge","Kammerspiele Berlin","Theater unterm Turm",
-      "Chamäleon Theater Berlin in den Hackeschen Höfen","Admiralspalast","Bi Nuu",
-      "OXI","Soda","Frannz","The Castle Pub Berlin","Panorama Bar","Surprise",
-      "Kunstraum Heartspace","LARK","Maxxim Club","Deutsche Oper Berlin","Zita Club",
-      "Chapters Bookshop","YAAM","Berliner Ensemble","Jockel Event Hall","about blank",
-      "Varia Vineta","Metropol","Alte Kantine","Volksbühne","Jane & the Jam",
-      "DNA. Art House","Privatclub Berlin","Spindler & Klatt","Soho House Berlin",
-      "Sharlie Cheen Bar","Theater des Westens","Paradise Club","Belushi's Berlin",
-      "Mustang Bar","Süss War Gestern","Theater am Potsdamer Platz","Golden Gate",
-      "Uber Eats Music Hall","Knutschfleck","Konzerthaus Berlin","Mein Haus am See",
-      "ART Stalker - Kunst+Bar+Events","Havanna","Ampere Garden","Alter Roter Löwe Rein",
-      "Zilles Stubentheater","Theater an der Parkaue","Deutsches Theater Berlin",
-      "Lützow Bar","Kühlhaus","Der Weiße Hase","Blumental","Galli Theater Berlin",
-      "The Coral","Kantine am Berghain","Club Weekend","Tiffany Club","Tresor",
-      "Kitty Cheng Bar","Renate","Lido Berlin","Mehringhoftheater","Olympiastadion Berlin",
-      "Pawn Dot Com Bar","Berghain","Coco Boule","Babylon Berlin","freiheit fünfzehn",
-      "Deutsches Theater — Box","Badehaus","Weekend Club Berlin","Neue Odessa Bar",
-    ];
-
-    // Location-Column befüllen (2× für nahtlosen Loop)
-    const track = document.getElementById('location-track');
-    function addItems() {
-      LOCATIONS.forEach(name => {
-        const el = document.createElement('div');
-        el.className = 'location-item';
-        el.textContent = name;
-        track.appendChild(el);
-      });
-    }
-    addItems(); // erste Runde
-    addItems(); // zweite Runde (Loop)
-  </script>
-
-  <!-- ═══════════════════════════════════════
-       I18N
-  ═══════════════════════════════════════ -->
   <script>
     const i18n = {
       de: {
-        'page.title':        'yesberlin.rsvp — Events. Kuratiert.',
-        'page.description':  'yesberlin.rsvp — Der kuratierte Event-Newsletter für Berlin. Musik, Nightlife, Kultur, Kunst. Jeden Montag und Donnerstag.',
-        'og.title':          'yesberlin.rsvp — Events. Kuratiert.',
-        'og.description':    'Kein Algorithmus. Kein Spam. Nur die Events, die es wirklich wert sind.',
-        'nav.imprint':       'Impressum',
-        'nav.privacy':       'Datenschutz',
-        'hero.eyebrow':      'Der Event-Newsletter für Berlin',
-        'hero.subtitle':     'Kein Algorithmus. Kein Spam. Kein BS.<br>Dafür alle Events in Berlin.',
-        'form.label':        'Jetzt anmelden — kostenlos',
-        'form.button':       'Anmelden',
-        'form.note':         'Mit der Anmeldung stimmst du unserer <a href="datenschutz.html">Datenschutzerklärung</a> zu. Abmeldung jederzeit mit einem Klick. Enthält gelegentlich Affiliate-Links.',
-        'props.curated.title':  'Kuratiert',
-        'props.curated.text':   'Kein Algorithmus entscheidet, was du siehst. Jedes Event wird manuell geprüft. Nach Qualität, nicht nach Klickwahrscheinlichkeit.',
-        'props.complete.title': 'Vollständig',
-        'props.complete.text':  'Von Berghain bis Berliner Philharmoniker, vom Flohmarkt bis zum Startup-Pitch. Berlin passiert jeden Tag. Du verpasst nichts davon.',
-        'props.reliable.title': 'Verlässlich',
-        'props.reliable.text':  'Montags die nächsten 10 Tage. Donnerstags die nächsten 6 Tage. Kein Social-Media-Rauschen. Nur dein persönliches Event-Radar.',
-        'cta.title':             'Bereit für Berlin?',
-        'cta.subtitle':          'Kostenlos · Direkt in dein Postfach · Jederzeit abmeldbar',
-        'footer.cookie_settings': 'Cookie-Einstellungen',
+        'nav.cities':'Cities','nav.tech':'Technology','nav.partners':'Partnerships',
+        'hero.eyebrow':'Lebe Kultur, lebe deine Stadt.',
+        'hero.tagline':'Wir erstellen Newsletter für Musik, Kunst und Kultur.',
+        'hero.sub':'Verpasse nichts, was dein Leben bereichert.',
+        'hero.cta_primary':'Zu YesBerlin','hero.cta_secondary':'Partner werden',
+        'guide.eyebrow':'Wer wir sind',
+        'guide.headline':'Kulturleben sollte keine Vollzeitbeschäftigung sein.',
+        'guide.body':'Von <strong>Stadtmenschen für Stadtmenschen</strong>: Wir wissen, wie frustrierend es ist, großartige Events zu verpassen. Wir haben eine Technologie entwickelt, die hunderte Events kuratiert, damit du es nicht musst. Das Ergebnis ist ein Newsletter, den du <strong>personalisieren und vertrauen</strong> kannst.',
+        'tech.eyebrow':'Die Technologie dahinter',
+        'tech.headline':'Wir haben die Arbeit gemacht. Du genießt das Ergebnis.',
+        'tech.sub':'Hinter jedem YES Newsletter steckt ein System, das niemals schläft.',
+        'tech.card1.title':'Echtzeit-Daten',
+        'tech.card1.text':'Hunderte von Quellen. Eine Inbox. Wir verarbeiten Events aus der gesamten Stadt, von Ticketplattformen bis Kulturinstitutionen, in Echtzeit.',
+        'tech.card2.title':'Kuratierung & Klassifizierung',
+        'tech.card2.text':'Wir kuratieren und klassifizieren jeden Event für unsere User, damit du immer genau das findest, was zu dir passt.',
+        'tech.card3.title':'Persönlich & Kostenlos',
+        'tech.card3.text':'Unsere Inhalte passen sich deinen Interessen und Bedürfnissen an. Ein Newsletter, dem User vertrauen können — kostenlos für immer.',
+        'cities.eyebrow':'Unsere Städte','cities.headline':'Lokal verbunden. Global gedacht.',
+        'cities.sub':'Jede YES-Stadt ist ein eigenständiges Produkt, gebaut für die Kultur und den Rhythmus dieser Stadt.',
+        'cities.status.live':'Live','cities.status.soon':'Demnächst','cities.status.open':'Get in Touch',
+        'cities.your_city':'Deine Stadt?',
+        'partners.eyebrow':'Partner werden','partners.headline':'Gemeinsam mehr erreichen.',
+        'partners.sub':'Du bist Venue, Ticketplattform, Kulturinstitution oder Stadtmarke? Lass uns reden.',
+        'partners.card1.title':'Für Venues & Ticketing',
+        'partners.card1.text':'Bring deine Events vor das richtige Publikum. YES-Leser sind aktiv, kulturinteressiert und kaufbereit.',
+        'partners.card2.title':'Für Städte & Institutionen',
+        'partners.card2.text':'Du vertrittst eine Stadt, ein Kulturamt oder eine Tourismusbehörde? Wir bauen maßgeschneiderte Lösungen.',
+        'partners.card3.title':'Für lokale Unternehmen',
+        'partners.card3.text':'Du bist ein lokales Unternehmen und möchtest kulturinteressierte Menschen in deiner Stadt erreichen? Wir sind dein Partner.',
+        'partners.cta':'Jetzt anfragen',
+        'cta.eyebrow':'Bereit?','cta.headline':'Bereit, deine Stadt wirklich zu erleben?',
+        'cta.sub':'Starte mit Berlin oder trag dich für die nächste Stadt ein.',
+        'cta.btn':'Zu YesBerlin →'
       },
       en: {
-        'page.title':        'yesberlin.rsvp — Events. Curated.',
-        'page.description':  'yesberlin.rsvp — The curated event newsletter for Berlin. Music, Nightlife, Culture, Art. Every Monday and Thursday.',
-        'og.title':          'yesberlin.rsvp — Events. Curated.',
-        'og.description':    'No algorithm. No spam. Just the events truly worth your time.',
-        'nav.imprint':       'Imprint',
-        'nav.privacy':       'Privacy',
-        'hero.eyebrow':      'The event newsletter for Berlin',
-        'hero.subtitle':     'No algorithm. No spam. No BS.<br>Just every event in Berlin.',
-        'form.label':        'Subscribe now — it\'s free',
-        'form.button':       'Subscribe',
-        'form.note':         'By subscribing you agree to our <a href="datenschutz.html">Privacy Policy</a>. Unsubscribe anytime with one click. Occasionally contains affiliate links.',
-        'props.curated.title':  'Curated',
-        'props.curated.text':   'No algorithm decides what you see. Every event is manually reviewed. For quality, not click probability.',
-        'props.complete.title': 'Complete',
-        'props.complete.text':  'From Berghain to the Berlin Philharmonic, from flea markets to startup pitches. Berlin happens every day. You won\'t miss a thing.',
-        'props.reliable.title': 'Reliable',
-        'props.reliable.text':  'Monday covers the next 10 days. Thursday covers the next 6. No social media noise. Just your personal event radar.',
-        'cta.title':             'Ready for Berlin?',
-        'cta.subtitle':          'Free · Straight to your inbox · Unsubscribe anytime',
-        'footer.cookie_settings': 'Cookie settings',
+        'nav.cities':'Cities','nav.tech':'Technology','nav.partners':'Partnerships',
+        'hero.eyebrow':'Live culture. Live your city.',
+        'hero.tagline':'We create newsletters for music, art and culture.',
+        'hero.sub':'Never miss what matters to you.',
+        'hero.cta_primary':'Go to YesBerlin','hero.cta_secondary':'Become a partner',
+        'guide.eyebrow':'Who we are',
+        'guide.headline':'Cultural life shouldn\'t require a full-time effort.',
+        'guide.body':'Built by <strong>city people, for city people</strong>: we know how it feels to miss out on something extraordinary. We built technology that curates hundreds of events across every corner of your city, so you never have to search again. The result is a newsletter you can <strong>personalise and trust completely</strong>.',
+        'tech.eyebrow':'The technology behind it',
+        'tech.headline':'We do the work. You live the experience.',
+        'tech.sub':'Behind every YES newsletter is a system that never sleeps.',
+        'tech.card1.title':'Real-Time Data',
+        'tech.card1.text':'Hundreds of sources. One inbox. We process events from across your entire city, from ticketing platforms to cultural institutions, in real time.',
+        'tech.card2.title':'Curation & Classification',
+        'tech.card2.text':'We curate and classify every event for our users, so you always find exactly what suits you.',
+        'tech.card3.title':'Personal & Free',
+        'tech.card3.text':'Our content adapts to your interests and needs. A newsletter users can trust — free forever.',
+        'cities.eyebrow':'Our cities','cities.headline':'Local at heart. Global in reach.',
+        'cities.sub':'Each YES city is its own product — built for that city\'s culture, venues, and rhythm.',
+        'cities.status.live':'Live','cities.status.soon':'Coming Soon','cities.status.open':'Get in Touch',
+        'cities.your_city':'Your City?',
+        'partners.eyebrow':'Partner with us','partners.headline':'Built to grow together.',
+        'partners.sub':'Are you a venue, ticketing platform, cultural institution, or city brand? Let\'s talk.',
+        'partners.card1.title':'Venues & Ticketing',
+        'partners.card1.text':'Get your events in front of the right audience. YES readers are active, culturally engaged, and ready to buy.',
+        'partners.card2.title':'Cities & Institutions',
+        'partners.card2.text':'Representing a city, cultural authority, or tourism board? We build tailored solutions.',
+        'partners.card3.title':'For Local Businesses',
+        'partners.card3.text':'Are you a local business looking to reach culturally engaged people in your city? We are your partner.',
+        'partners.cta':'Get in touch',
+        'cta.eyebrow':'Ready?','cta.headline':'Ready to actually live your city?',
+        'cta.sub':'Start with Berlin or join the waitlist for the next city.',
+        'cta.btn':'Go to YesBerlin →'
       }
     };
 
     function setLang(lang) {
-      const t = i18n[lang];
-      if (!t) return;
-      document.documentElement.lang = lang;
-      document.documentElement.dataset.lang = lang;
-      document.getElementById('page-title').textContent   = t['page.title'];
-      document.getElementById('meta-description').content = t['page.description'];
-      document.getElementById('og-title').content         = t['og.title'];
-      document.getElementById('og-description').content   = t['og.description'];
-      document.getElementById('cta-input').placeholder    = lang === 'de' ? 'deine@email.de' : 'your@email.com';
-      document.getElementById('form-de').style.display    = lang === 'de' ? 'flex' : 'none';
-      document.getElementById('form-en').style.display    = lang === 'en' ? 'flex' : 'none';
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.dataset.i18n;
-        if (t[key] !== undefined) el.textContent = t[key];
-      });
-      document.querySelectorAll('[data-i18n-html]').forEach(el => {
-        const key = el.dataset.i18nHtml;
-        if (t[key] !== undefined) el.innerHTML = t[key];
-      });
-      if (window.klaroConfig) window.klaroConfig.lang = lang;
+      document.documentElement.setAttribute('data-lang', lang);
       document.getElementById('btn-de').classList.toggle('active', lang === 'de');
       document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-      localStorage.setItem('yesberlin_lang', lang);
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('year').textContent = new Date().getFullYear();
-      const saved  = localStorage.getItem('yesberlin_lang');
-      const browser = navigator.language?.startsWith('en') ? 'en' : 'de';
-      const init   = saved || browser;
-      if (init !== 'de') setLang(init);
-    });
-  </script>
-
-  <!-- ═══════════════════════════════════════
-       HONEYPOT — Bot-Blocking
-       Wenn b_confirm ausgefüllt ist = Bot → Submit blockieren
-  ═══════════════════════════════════════ -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('form[data-type="subscription"]').forEach(form => {
-        form.addEventListener('submit', function(e) {
-          const honeypot = this.querySelector('input[name="b_confirm"]');
-          if (honeypot && honeypot.value !== '') {
-            e.preventDefault(); // Bot erkannt — still blockieren
-            return false;
-          }
-        });
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang][key] !== undefined) el.textContent = i18n[lang][key];
       });
-
-      // CTA Formular: locale synchron mit Sprachumschalter halten
-      const ctaLocale = document.getElementById('cta-locale');
-      if (ctaLocale) {
-        const observer = new MutationObserver(() => {
-          ctaLocale.value = document.documentElement.lang || 'de';
-        });
-        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
-      }
-    });
+      document.querySelectorAll('[data-i18n-html]').forEach(el => {
+        const key = el.getAttribute('data-i18n-html');
+        if (i18n[lang][key] !== undefined) el.innerHTML = i18n[lang][key];
+      });
+      document.getElementById('page-title').textContent = lang === 'en'
+        ? 'YES Global — Event Intelligence. Built for Cities.'
+        : 'YES Global — Event Intelligence. Für Städte gebaut.';
+      document.getElementById('meta-description').setAttribute('content', lang === 'en'
+        ? 'YES Global — Event Intelligence for cities worldwide. Curated event newsletters, powered by technology and passion for culture.'
+        : 'YES Global — Event Intelligence für Städte weltweit. Kuratierte Event-Newsletter, powered by Technologie und Leidenschaft für Kultur.');
+    }
   </script>
-
-  <!-- Brevo Subscription JS -->
-  <script>
-    window.REQUIRED_CODE_ERROR_MESSAGE = 'Wähle bitte einen Ländervorwahl aus.';
-    window.LOCALE = 'de';
-    window.EMAIL_INVALID_MESSAGE = "Bitte gib eine gültige E-Mail-Adresse ein.";
-    window.REQUIRED_ERROR_MESSAGE = "Dieses Feld darf nicht leer sein.";
-    window.GENERIC_INVALID_MESSAGE = "Ungültige Eingabe. Bitte erneut versuchen.";
-    window.translation = {
-      common: {
-        selectedList: '{quantity} Liste ausgewählt',
-        selectedLists: '{quantity} Listen ausgewählt',
-      }
-    };
-    var AUTOHIDE = Boolean(0);
-  </script>
-  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-
 </body>
 </html>
