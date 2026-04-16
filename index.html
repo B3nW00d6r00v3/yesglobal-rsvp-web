@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="de" data-lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" id="meta-description"
+    content="yesberlin.rsvp — Der kuratierte Event-Newsletter für Berlin. Musik, Nightlife, Kultur, Kunst. Jeden Montag und Donnerstag.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yesberlin.rsvp">
+  <meta property="og:title" id="og-title" content="yesberlin.rsvp — Events. Kuratiert.">
+  <meta property="og:description" id="og-description"
+    content="Kein Algorithmus. Kein Spam. Nur die Events, die es wirklich wert sind.">
+
+  <title id="page-title">yesberlin.rsvp — Events. Kuratiert.</title>
+
+  <!-- GTM — ⚠️ GTM-XXXXXXX durch eigene Container-ID ersetzen -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+
+  <!-- KLARO CONFIG -->
+  <script>
+    var klaroConfig = {
+      version: 1, lang: 'de',
+      storageMethod: 'localStorage', storageName: 'yesberlin_consent',
+      mustConsent: false, privacyPolicy: '/datenschutz.html',
+      translations: {
+        de: {
+          consentNotice: { description: 'Wir nutzen externe Dienste für Analytics und Werbung. Mit deiner Einwilligung helfen sie uns, yesberlin.rsvp zu verbessern.', learnMore: 'Einstellungen' },
+          consentModal: { title: 'Datenschutz-Einstellungen', description: 'Hier kannst du anpassen, welche Dienste wir nutzen dürfen.', privacyPolicy: { name: 'Datenschutzerklärung', text: 'Mehr in unserer {privacyPolicy}.' } },
+          acceptAll: 'Alle akzeptieren', acceptSelected: 'Auswahl speichern', decline: 'Ablehnen', close: 'Schließen', ok: 'OK',
+          services: {
+            'google-tag-manager': { title: 'Google Analytics', description: 'Website-Analyse: Besucher, Herkunft, Kampagnen-Tracking (UTM), Conversions. Daten an Google-Server (USA).' },
+            'meta-pixel': { title: 'Meta Pixel (Facebook/Instagram)', description: 'Misst Werbeanzeigen-Wirksamkeit auf Instagram und Facebook. Daten an Meta-Server (USA).' },
+            'bing-ads': { title: 'Microsoft Advertising (Bing)', description: 'Conversion-Tracking für Bing-Suchanzeigen. Daten an Microsoft-Server.' },
+          },
+        },
+        en: {
+          consentNotice: { description: 'We use external services for analytics and advertising. With your consent, they help us improve yesberlin.rsvp.', learnMore: 'Settings' },
+          consentModal: { title: 'Privacy Settings', description: 'Here you can adjust which services we are allowed to use.', privacyPolicy: { name: 'Privacy Policy', text: 'Read more in our {privacyPolicy}.' } },
+          acceptAll: 'Accept all', acceptSelected: 'Save selection', decline: 'Decline', close: 'Close', ok: 'OK',
+          services: {
+            'google-tag-manager': { title: 'Google Analytics', description: 'Website analysis: visitors, origin, campaign tracking (UTM), conversions. Data transferred to Google servers (US).' },
+            'meta-pixel': { title: 'Meta Pixel (Facebook/Instagram)', description: 'Measures ad effectiveness on Instagram and Facebook. Data transferred to Meta servers (US).' },
+            'bing-ads': { title: 'Microsoft Advertising (Bing)', description: 'Conversion tracking for Bing search ads. Data transferred to Microsoft servers.' },
+          },
+        },
+      },
+      services: [
+        { name: 'google-tag-manager', purposes: ['analytics','advertising'], required: false, default: false,
+          onAccept: `dataLayer.push({ event: 'klaro_consent', analytics_consent: true });`,
+          onDecline: `dataLayer.push({ event: 'klaro_consent', analytics_consent: false });` },
+        { name: 'meta-pixel', purposes: ['advertising'], required: false, default: false,
+          onAccept: `dataLayer.push({ event: 'klaro_consent', meta_pixel_consent: true });`,
+          onDecline: `dataLayer.push({ event: 'klaro_consent', meta_pixel_consent: false });` },
+        { name: 'bing-ads', purposes: ['advertising'], required: false, default: false,
+          onAccept: `dataLayer.push({ event: 'klaro_consent', bing_consent: true });`,
+          onDecline: `dataLayer.push({ event: 'klaro_consent', bing_consent: false });` },
+      ],
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css">
+  <script defer src="https://cdn.kiprotect.com/klaro/v0.7/klaro.js"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black:    #080808;
+      --charcoal: #111111;
+      --grey:     #2a2a2a;
+      --muted:    #555555;
+      --cream:    #F2EDE4;
+      --white:    #FAFAF8;
+      --lime:     #D4F53C;
+      --lime-dim: #b8d932;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: var(--cream);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 20px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ═══════════════════════════════════════
+       KLARO OVERRIDES
+    ═══════════════════════════════════════ */
+    .klaro .cookie-notice, .klaro .cookie-modal .cm-modal {
+      background: var(--charcoal) !important; border-top: 1px solid var(--grey) !important;
+      color: var(--cream) !important; font-family: 'Cormorant Garamond', serif !important; border-radius: 0 !important;
+    }
+    .klaro .cm-btn.cm-btn-success { background: var(--lime) !important; color: var(--black) !important; font-family: 'JetBrains Mono', monospace !important; font-size: 0.75rem !important; letter-spacing: 0.08em !important; border-radius: 0 !important; border: none !important; }
+    .klaro .cm-btn.cm-btn-info, .klaro .cm-btn.cm-btn-decline { background: transparent !important; color: var(--muted) !important; font-family: 'JetBrains Mono', monospace !important; font-size: 0.72rem !important; border: 1px solid var(--grey) !important; border-radius: 0 !important; }
+    .klaro .cookie-modal h1, .klaro .cookie-modal h2 { font-family: 'Bebas Neue', sans-serif !important; color: var(--white) !important; }
+    .klaro .cm-switch input:checked + .cm-switch-label { background: var(--lime) !important; }
+
+    /* ═══════════════════════════════════════
+       LOCATION SCROLL COLUMN
+       Fixiert, rechts, volle Höhe.
+       Scrollt langsam von unten nach oben.
+    ═══════════════════════════════════════ */
+    .location-column {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 100vh;
+      overflow: hidden;
+      z-index: 5;
+      pointer-events: none; /* kein Blockieren der Hauptinhalte */
+      /* sanftes Ausblenden oben + unten */
+      -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 12%,
+        black 88%,
+        transparent 100%
+      );
+      mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 12%,
+        black 88%,
+        transparent 100%
+      );
+    }
+
+    .location-track {
+      display: flex;
+      flex-direction: column;
+      /* Animation: Höhe wird per JS gesetzt */
+      animation: locationScroll 90s linear infinite;
+    }
+
+    .location-item {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      color: var(--cream);
+      opacity: 0.28;
+      padding: 0.45rem 1.25rem 0.45rem 0.75rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      pointer-events: auto; /* Hover reaktivieren */
+      transition: opacity 0.3s, color 0.3s;
+      cursor: default;
+      text-transform: uppercase;
+    }
+
+    .location-item:hover {
+      opacity: 1;
+      color: var(--lime);
+    }
+
+    @keyframes locationScroll {
+      from { transform: translateY(0); }
+      to   { transform: translateY(-50%); }
+    }
+
+    /* Auf kleinen Screens ausblenden */
+    @media (max-width: 1100px) {
+      .location-column { display: none; }
+    }
+
+    /* ═══════════════════════════════════════
+       LANGUAGE SWITCHER
+    ═══════════════════════════════════════ */
+    .lang-switcher { display: flex; align-items: center; gap: 0.4rem; }
+    .lang-btn {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem; letter-spacing: 0.1em; color: #888;
+      background: none; border: none; cursor: pointer;
+      padding: 0.15rem 0; text-transform: uppercase; transition: color 0.2s;
+    }
+    .lang-btn.active { color: var(--lime); border-bottom: 1px solid var(--lime); }
+    .lang-btn:hover:not(.active) { color: var(--cream); }
+    .lang-divider { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; color: var(--grey); }
+
+    /* ═══════════════════════════════════════
+       HEADER — nur Logo + Lang
+    ═══════════════════════════════════════ */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Logo: YES in Lime, berlin.rsvp in Cream */
+    .logo {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+    }
+    .logo-yes    { color: var(--lime); }
+    .logo-domain { color: var(--lime); }
+
+    /* ═══════════════════════════════════════
+       HERO — zentriert, Titel skaliert mit min(vw,vh)
+    ═══════════════════════════════════════ */
+    .hero {
+      height: 100svh;
+      min-height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(212, 245, 60, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212, 245, 60, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      padding: 5rem 2rem 0;
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .hero-eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(0.65rem, 1.4vh, 0.85rem);
+      letter-spacing: 0.2em; color: var(--lime);
+      text-transform: uppercase; margin-bottom: clamp(0.75rem, 1.5vh, 1.5rem);
+      opacity: 0; animation: fadeUp 0.8s ease 0.3s forwards;
+    }
+
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      line-height: 0.88; letter-spacing: -0.02em;
+      opacity: 0; animation: fadeUp 0.8s ease 0.5s forwards;
+    }
+    .hero-title .title-yes {
+      display: block;
+      font-size: clamp(3rem, min(19vw, 19vh), 19rem);
+      color: var(--lime);
+    }
+    .hero-title .title-berlin {
+      display: block;
+      font-size: clamp(4.5rem, min(23vw, 23vh), 23rem);
+      color: var(--white);
+    }
+    .hero-title .title-rsvp {
+      display: block;
+      font-size: clamp(1.2rem, min(6vw, 6vh), 6rem);
+      color: var(--cream);
+      opacity: 0.5;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-subtitle {
+      margin-top: clamp(1rem, 2vh, 2.5rem);
+      margin-bottom: clamp(3.5rem, 7vh, 7rem);
+      font-size: clamp(1rem, min(2vw, 2.2vh), 1.45rem);
+      font-weight: 300; font-style: italic;
+      color: rgba(242, 237, 228, 0.72);
+      max-width: 520px;
+      opacity: 0; animation: fadeUp 0.8s ease 0.7s forwards;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ═══════════════════════════════════════
+       FORM SECTION
+    ═══════════════════════════════════════ */
+    .form-section {
+      padding: 0 2rem clamp(1rem, 2vh, 2rem);
+      max-width: 1100px; margin: 0 auto; width: 100%;
+      opacity: 0; animation: fadeUp 0.8s ease 0.9s forwards;
+    }
+
+    .form-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem; letter-spacing: 0.15em; color: #888;
+      text-transform: uppercase; display: block; margin-bottom: 1rem;
+    }
+
+    .form-row { display: flex; gap: 0; max-width: 520px; }
+    .form-row input[type="email"] {
+      flex: 1; background: var(--charcoal);
+      border: 1px solid var(--grey); border-right: none;
+      color: var(--cream); font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem; padding: 0.9rem 1.25rem; outline: none; transition: border-color 0.2s;
+    }
+    .form-row input[type="email"]::placeholder { color: var(--muted); font-style: italic; }
+    .form-row input[type="email"]:focus { border-color: var(--lime); }
+    .form-row button {
+      background: var(--lime); color: var(--black); border: none;
+      padding: 0.9rem 1.75rem; font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem; font-weight: 500; letter-spacing: 0.08em;
+      cursor: pointer; text-transform: uppercase; transition: background 0.2s; white-space: nowrap;
+    }
+    .form-row button:hover { background: var(--lime-dim); }
+
+    .form-note {
+      margin-top: 0.85rem; font-size: 0.92rem; color: #888; font-style: italic;
+    }
+    .form-note a { color: #888; text-decoration: underline; transition: color 0.2s; }
+    .form-note a:hover { color: var(--cream); }
+
+    /* ═══════════════════════════════════════
+       TICKER
+    ═══════════════════════════════════════ */
+    .ticker-section {
+      position: relative; z-index: 10; background: var(--black);
+      border-top: 1px solid var(--grey); border-bottom: 1px solid var(--grey);
+      padding: 1.25rem 0; overflow: hidden; white-space: nowrap;
+    }
+    .ticker-track { display: inline-flex; gap: 3rem; animation: ticker 30s linear infinite; }
+    .ticker-item { font-family: 'Bebas Neue', sans-serif; font-size: 1.25rem; letter-spacing: 0.1em; color: #888; }
+    .ticker-item.accent { color: var(--lime); }
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ═══════════════════════════════════════
+       VALUE PROPS
+    ═══════════════════════════════════════ */
+    .props-section {
+      position: relative; z-index: 10; background: var(--black);
+      padding: 6rem 2rem;
+      max-width: 100%; margin: 0 auto;
+      border-top: 1px solid var(--grey);
+    }
+    .props-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .props-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
+    .prop { display: flex; flex-direction: column; gap: 1rem; }
+    .prop-number { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; color: #3a3a3a; line-height: 1; }
+    .prop-title { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--lime); }
+    .prop-text { font-size: 1.05rem; color: rgba(242, 237, 228, 0.82); font-weight: 300; line-height: 1.7; }
+
+    /* ═══════════════════════════════════════
+       CTA
+    ═══════════════════════════════════════ */
+    .cta-section {
+      position: relative; z-index: 10; background: var(--black);
+      padding: 8rem 2rem; text-align: center;
+      border-top: 1px solid var(--grey);
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: 'YES';
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(10rem, 35vw, 36rem);
+      color: rgba(212, 245, 60, 0.03);
+      pointer-events: none; white-space: nowrap;
+    }
+    .cta-section h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 4vw, 3.5rem); font-weight: 300; font-style: italic; color: var(--white); margin-bottom: 0.5rem; }
+    .cta-section > p { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; letter-spacing: 0.15em; color: var(--lime); text-transform: uppercase; margin-bottom: 3rem; }
+    .cta-form { display: inline-flex; gap: 0; max-width: 480px; width: 100%; }
+    .cta-form input[type="email"] {
+      flex: 1; background: var(--charcoal); border: 1px solid var(--grey); border-right: none;
+      color: var(--cream); font-family: 'Cormorant Garamond', serif; font-size: 1rem;
+      padding: 0.9rem 1.25rem; outline: none; transition: border-color 0.2s;
+    }
+    .cta-form input[type="email"]::placeholder { color: var(--muted); font-style: italic; }
+    .cta-form input[type="email"]:focus { border-color: var(--lime); }
+    .cta-form button { background: var(--lime); color: var(--black); border: none; padding: 0.9rem 1.75rem; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.08em; cursor: pointer; text-transform: uppercase; transition: background 0.2s; }
+    .cta-form button:hover { background: var(--lime-dim); }
+
+    /* ═══════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════ */
+    footer {
+      position: relative; z-index: 10; background: var(--black);
+      border-top: 1px solid var(--grey);
+      padding: 2rem;
+      max-width: 100%; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-left { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #888; }
+    .footer-right { display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; }
+    .footer-right a { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #888; text-decoration: none; letter-spacing: 0.05em; transition: color 0.2s; }
+    .footer-right a:hover { color: var(--cream); }
+    .klaro-open-btn { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #888; background: none; border: none; cursor: pointer; letter-spacing: 0.05em; transition: color 0.2s; padding: 0; }
+    .klaro-open-btn:hover { color: var(--cream); }
+
+    /* ═══════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════ */
+    @media (max-width: 768px) {
+      header { padding: 1.25rem; }
+      .hero-content { padding: 7rem 1.25rem 2rem; }
+      .form-section { padding: 2rem 1.25rem 3rem; }
+      .form-row { max-width: 100%; }
+      .props-section { padding: 3.5rem 1.25rem; }
+      .props-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .cta-section { padding: 5rem 1.25rem; }
+      .cta-form { flex-direction: column; }
+      .cta-form input[type="email"] { border-right: 1px solid var(--grey); border-bottom: none; }
+      footer { flex-direction: column; align-items: flex-start; padding: 2rem 1.25rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- GTM NoScript -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- ═══════════════════════════════════════
+       LOCATION SCROLL COLUMN (rechts, fix)
+  ═══════════════════════════════════════ -->
+  <aside class="location-column" aria-hidden="true">
+    <div class="location-track" id="location-track">
+      <!-- Wird per JS befüllt (2× für nahtlosen Loop) -->
+    </div>
+  </aside>
+
+  <!-- ═══ HEADER — Logo + Lang ═══ -->
+  <header>
+    <a href="/" class="logo">
+      <span class="logo-yes">YES</span><span class="logo-domain">berlin.rsvp</span>
+    </a>
+    <div class="lang-switcher" role="group" aria-label="Sprache / Language">
+      <button class="lang-btn active" id="btn-de" onclick="setLang('de')">DE</button>
+      <span class="lang-divider">|</span>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-eyebrow" data-i18n="hero.eyebrow">Der Event-Newsletter für Berlin</span>
+      <h1 class="hero-title">
+        <span class="title-yes">YES</span>
+        <span class="title-berlin">BERLIN</span>
+        <span class="title-rsvp">.rsvp</span>
+      </h1>
+      <p class="hero-subtitle" data-i18n-html="hero.subtitle">
+        Kein Algorithmus. Kein Spam. Kein BS.<br>Dafür alle Events in Berlin.
+      </p>
+    </div>
+
+    <div class="form-section" id="anmelden">
+      <span class="form-label" data-i18n="form.label">Jetzt anmelden — kostenlos</span>
+
+      <!-- Brevo success/error messages — styled in unserem Design -->
+      <div id="brevo-success" style="display:none; font-family:'JetBrains Mono',monospace; font-size:0.82rem; letter-spacing:0.08em; color:var(--lime); text-transform:uppercase; margin-bottom:1rem;">
+        ✓ Fast geschafft — bitte bestätige deine E-Mail.
+      </div>
+      <div id="brevo-error" style="display:none; font-family:'JetBrains Mono',monospace; font-size:0.82rem; letter-spacing:0.08em; color:#FF003C; text-transform:uppercase; margin-bottom:1rem;">
+        ✗ Etwas hat nicht geklappt — bitte erneut versuchen.
+      </div>
+
+      <!-- DE Formular -->
+      <form id="form-de" class="form-row"
+        method="POST"
+        action="https://455f9199.sibforms.com/serve/MUIFAOfjQVo5gGOk4Im8jI3jSHuj3sIqwnaYcroIBD_o8_fZKyCaFWNWOHCaMbSzWUNrQEJFY3X2K71TQYV4xQ9s7sRCU51pGwoakW-WlVqS6pMi_xoqnRu5YlIEv5TIZZ8npm5yPUQNt7ZV_ReqhrPjxkZRic-ClKXmA6670WeYE6LXrOTwppq3_AwBFLWyJ5P2Ykinqj4J9bXzNw=="
+        data-type="subscription">
+        <input type="email" name="EMAIL" placeholder="deine@email.de" aria-label="E-Mail-Adresse" required>
+        <button type="submit" data-i18n="form.button">Anmelden</button>
+        <!-- Brevo Honeypot (versteckt) -->
+        <input type="text" name="email_address_check" value="" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <!-- Unser eigener Honeypot -->
+        <input type="text" name="b_confirm" value="" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="locale" value="de">
+      </form>
+
+      <!-- EN Formular -->
+      <form id="form-en" class="form-row" style="display:none;"
+        method="POST"
+        action="https://455f9199.sibforms.com/serve/MUIFAOfjQVo5gGOk4Im8jI3jSHuj3sIqwnaYcroIBD_o8_fZKyCaFWNWOHCaMbSzWUNrQEJFY3X2K71TQYV4xQ9s7sRCU51pGwoakW-WlVqS6pMi_xoqnRu5YlIEv5TIZZ8npm5yPUQNt7ZV_ReqhrPjxkZRic-ClKXmA6670WeYE6LXrOTwppq3_AwBFLWyJ5P2Ykinqj4J9bXzNw=="
+        data-type="subscription">
+        <input type="email" name="EMAIL" placeholder="your@email.com" aria-label="Email address" required>
+        <button type="submit">Subscribe</button>
+        <input type="text" name="email_address_check" value="" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="text" name="b_confirm" value="" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="locale" value="en">
+      </form>
+
+      <p class="form-note" data-i18n-html="form.note">
+        Mit der Anmeldung stimmst du unserer <a href="datenschutz.html">Datenschutzerklärung</a> zu.
+        Abmeldung jederzeit mit einem Klick. Enthält gelegentlich Affiliate-Links.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══ VALUE PROPS ═══ -->
+  <section class="props-section">
+    <div class="props-inner">
+    <div class="props-grid">
+      <div class="prop">
+        <div class="prop-number">01</div>
+        <div class="prop-title" data-i18n="props.curated.title">Kuratiert</div>
+        <p class="prop-text" data-i18n="props.curated.text">
+          Kein Algorithmus entscheidet, was du siehst. Jedes Event wird manuell
+          geprüft. Nach Qualität, nicht nach Klickwahrscheinlichkeit.
+        </p>
+      </div>
+      <div class="prop">
+        <div class="prop-number">02</div>
+        <div class="prop-title" data-i18n="props.complete.title">Vollständig</div>
+        <p class="prop-text" data-i18n="props.complete.text">
+          Von Berghain bis Berliner Philharmoniker, vom Flohmarkt bis zum
+          Startup-Pitch. Berlin passiert jeden Tag. Du verpasst nichts davon.
+        </p>
+      </div>
+      <div class="prop">
+        <div class="prop-number">03</div>
+        <div class="prop-title" data-i18n="props.reliable.title">Verlässlich</div>
+        <p class="prop-text" data-i18n="props.reliable.text">
+          Montags die nächsten 10 Tage. Donnerstags die nächsten 6 Tage.
+          Kein Social-Media-Rauschen. Nur dein persönliches Event-Radar.
+        </p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ═══ TICKER ═══ -->
+  <div class="ticker-section" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item accent">🎵 Music</span><span class="ticker-item">·</span>
+      <span class="ticker-item">🎧 Nightlife</span><span class="ticker-item">·</span>
+      <span class="ticker-item accent">🎪 Festivals</span><span class="ticker-item">·</span>
+      <span class="ticker-item">🎭 Performing Arts</span><span class="ticker-item">·</span>
+      <span class="ticker-item accent">🎨 Arts & Culture</span><span class="ticker-item">·</span>
+      <span class="ticker-item">🛍️ Markets & Fairs</span><span class="ticker-item">·</span>
+      <span class="ticker-item accent">🚀 Growth</span><span class="ticker-item">·</span>
+      <span class="ticker-item">👨‍👩‍👧 Kids & Family</span><span class="ticker-item">·</span>
+      <span class="ticker-item accent">🏙️ City Life</span><span class="ticker-item">·</span>
+      <span class="ticker-item accent">🎵 Music</span><span class="ticker-item">·</span>
+      <span class="ticker-item">🎧 Nightlife</span><span class="ticker-item">·</span>
+      <span class="ticker-item accent">🎪 Festivals</span><span class="ticker-item">·</span>
+      <span class="ticker-item">🎭 Performing Arts</span><span class="ticker-item">·</span>
+      <span class="ticker-item accent">🎨 Arts & Culture</span><span class="ticker-item">·</span>
+      <span class="ticker-item">🛍️ Markets & Fairs</span><span class="ticker-item">·</span>
+      <span class="ticker-item accent">🚀 Growth</span><span class="ticker-item">·</span>
+      <span class="ticker-item">👨‍👩‍👧 Kids & Family</span><span class="ticker-item">·</span>
+      <span class="ticker-item accent">🏙️ City Life</span><span class="ticker-item">·</span>
+    </div>
+  </div>
+  <section class="cta-section">
+    <h2 data-i18n="cta.title">Bereit für Berlin?</h2>
+    <p data-i18n="cta.subtitle">Kostenlos · Direkt in dein Postfach · Jederzeit abmeldbar</p>
+    <form class="cta-form"
+      method="POST"
+      action="https://455f9199.sibforms.com/serve/MUIFAOfjQVo5gGOk4Im8jI3jSHuj3sIqwnaYcroIBD_o8_fZKyCaFWNWOHCaMbSzWUNrQEJFY3X2K71TQYV4xQ9s7sRCU51pGwoakW-WlVqS6pMi_xoqnRu5YlIEv5TIZZ8npm5yPUQNt7ZV_ReqhrPjxkZRic-ClKXmA6670WeYE6LXrOTwppq3_AwBFLWyJ5P2Ykinqj4J9bXzNw=="
+      data-type="subscription">
+      <input type="email" id="cta-input" name="EMAIL" placeholder="deine@email.de" aria-label="E-Mail-Adresse" required>
+      <button type="submit" data-i18n="form.button">Anmelden</button>
+      <input type="text" name="email_address_check" value="" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="text" name="b_confirm" value="" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="locale" value="de" id="cta-locale">
+    </form>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="footer-left">© <span id="year"></span> yesberlin.rsvp</div>
+    <nav class="footer-right">
+      <a href="impressum.html" data-i18n="nav.imprint">Impressum</a>
+      <a href="datenschutz.html" data-i18n="nav.privacy">Datenschutz</a>
+      <button class="klaro-open-btn" onclick="klaro.show()" data-i18n="footer.cookie_settings">
+        Cookie-Einstellungen
+      </button>
+    </nav>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       LOCATION LIST DATA
+  ═══════════════════════════════════════ -->
+  <script>
+    const LOCATIONS = [
+      "Schlosspark Theater","Huxleys Neue Welt","Astra Kulturhaus","100 Gramm",
+      "Columbia Theater","Hafenbar","Ritter Butzke Club Berlin","Tränenpalast - Berlin",
+      "Gorki Theater","Philharmonie Berlin – Kammermusiksaal","Humboldthain",
+      "Friedrichstadt-Palast","Theater am Frankfurter Tor","Cassiopeia",
+      "Bar jeder Vernunft","SO36","8MM Bar","The Wall Comedy Club","Kabarett-Theater Distel",
+      "Berliner Kriminal Theater","Max-Schmeling-Halle","Schaubühne Berlin",
+      "Deutsches Theater — Rangfoyer","Wintergarten Varieté Berlin","Amano Grand Central",
+      "Kater Blau","Bar Tausend","P61 Gallery","Quasimodo","Waldbühne Berlin",
+      "Matrix","Abgedreht","A-Trane","Arena Berlin","The Door","Astra Berlin",
+      "Im Theaterzelt in Steglitz-Zehlendorf","Bricks","Staatsoper Unter den Linden",
+      "Komödie am Kurfürstendamm","Bussi Bar","Silent Green Kulturquartier","Denizen",
+      "KitKat","Sisyfass","Gretchen","Komische Oper Berlin","Philharmonie Berlin",
+      "Downstairs Comedy Club","Uber Arena Berlin","Festsaal Kreuzberg","Tempodrom Berlin",
+      "M-Bia","Old CCCP","The Floating Lounge","Kammerspiele Berlin","Theater unterm Turm",
+      "Chamäleon Theater Berlin in den Hackeschen Höfen","Admiralspalast","Bi Nuu",
+      "OXI","Soda","Frannz","The Castle Pub Berlin","Panorama Bar","Surprise",
+      "Kunstraum Heartspace","LARK","Maxxim Club","Deutsche Oper Berlin","Zita Club",
+      "Chapters Bookshop","YAAM","Berliner Ensemble","Jockel Event Hall","about blank",
+      "Varia Vineta","Metropol","Alte Kantine","Volksbühne","Jane & the Jam",
+      "DNA. Art House","Privatclub Berlin","Spindler & Klatt","Soho House Berlin",
+      "Sharlie Cheen Bar","Theater des Westens","Paradise Club","Belushi's Berlin",
+      "Mustang Bar","Süss War Gestern","Theater am Potsdamer Platz","Golden Gate",
+      "Uber Eats Music Hall","Knutschfleck","Konzerthaus Berlin","Mein Haus am See",
+      "ART Stalker - Kunst+Bar+Events","Havanna","Ampere Garden","Alter Roter Löwe Rein",
+      "Zilles Stubentheater","Theater an der Parkaue","Deutsches Theater Berlin",
+      "Lützow Bar","Kühlhaus","Der Weiße Hase","Blumental","Galli Theater Berlin",
+      "The Coral","Kantine am Berghain","Club Weekend","Tiffany Club","Tresor",
+      "Kitty Cheng Bar","Renate","Lido Berlin","Mehringhoftheater","Olympiastadion Berlin",
+      "Pawn Dot Com Bar","Berghain","Coco Boule","Babylon Berlin","freiheit fünfzehn",
+      "Deutsches Theater — Box","Badehaus","Weekend Club Berlin","Neue Odessa Bar",
+    ];
+
+    // Location-Column befüllen (2× für nahtlosen Loop)
+    const track = document.getElementById('location-track');
+    function addItems() {
+      LOCATIONS.forEach(name => {
+        const el = document.createElement('div');
+        el.className = 'location-item';
+        el.textContent = name;
+        track.appendChild(el);
+      });
+    }
+    addItems(); // erste Runde
+    addItems(); // zweite Runde (Loop)
+  </script>
+
+  <!-- ═══════════════════════════════════════
+       I18N
+  ═══════════════════════════════════════ -->
+  <script>
+    const i18n = {
+      de: {
+        'page.title':        'yesberlin.rsvp — Events. Kuratiert.',
+        'page.description':  'yesberlin.rsvp — Der kuratierte Event-Newsletter für Berlin. Musik, Nightlife, Kultur, Kunst. Jeden Montag und Donnerstag.',
+        'og.title':          'yesberlin.rsvp — Events. Kuratiert.',
+        'og.description':    'Kein Algorithmus. Kein Spam. Nur die Events, die es wirklich wert sind.',
+        'nav.imprint':       'Impressum',
+        'nav.privacy':       'Datenschutz',
+        'hero.eyebrow':      'Der Event-Newsletter für Berlin',
+        'hero.subtitle':     'Kein Algorithmus. Kein Spam. Kein BS.<br>Dafür alle Events in Berlin.',
+        'form.label':        'Jetzt anmelden — kostenlos',
+        'form.button':       'Anmelden',
+        'form.note':         'Mit der Anmeldung stimmst du unserer <a href="datenschutz.html">Datenschutzerklärung</a> zu. Abmeldung jederzeit mit einem Klick. Enthält gelegentlich Affiliate-Links.',
+        'props.curated.title':  'Kuratiert',
+        'props.curated.text':   'Kein Algorithmus entscheidet, was du siehst. Jedes Event wird manuell geprüft. Nach Qualität, nicht nach Klickwahrscheinlichkeit.',
+        'props.complete.title': 'Vollständig',
+        'props.complete.text':  'Von Berghain bis Berliner Philharmoniker, vom Flohmarkt bis zum Startup-Pitch. Berlin passiert jeden Tag. Du verpasst nichts davon.',
+        'props.reliable.title': 'Verlässlich',
+        'props.reliable.text':  'Montags die nächsten 10 Tage. Donnerstags die nächsten 6 Tage. Kein Social-Media-Rauschen. Nur dein persönliches Event-Radar.',
+        'cta.title':             'Bereit für Berlin?',
+        'cta.subtitle':          'Kostenlos · Direkt in dein Postfach · Jederzeit abmeldbar',
+        'footer.cookie_settings': 'Cookie-Einstellungen',
+      },
+      en: {
+        'page.title':        'yesberlin.rsvp — Events. Curated.',
+        'page.description':  'yesberlin.rsvp — The curated event newsletter for Berlin. Music, Nightlife, Culture, Art. Every Monday and Thursday.',
+        'og.title':          'yesberlin.rsvp — Events. Curated.',
+        'og.description':    'No algorithm. No spam. Just the events truly worth your time.',
+        'nav.imprint':       'Imprint',
+        'nav.privacy':       'Privacy',
+        'hero.eyebrow':      'The event newsletter for Berlin',
+        'hero.subtitle':     'No algorithm. No spam. No BS.<br>Just every event in Berlin.',
+        'form.label':        'Subscribe now — it\'s free',
+        'form.button':       'Subscribe',
+        'form.note':         'By subscribing you agree to our <a href="datenschutz.html">Privacy Policy</a>. Unsubscribe anytime with one click. Occasionally contains affiliate links.',
+        'props.curated.title':  'Curated',
+        'props.curated.text':   'No algorithm decides what you see. Every event is manually reviewed. For quality, not click probability.',
+        'props.complete.title': 'Complete',
+        'props.complete.text':  'From Berghain to the Berlin Philharmonic, from flea markets to startup pitches. Berlin happens every day. You won\'t miss a thing.',
+        'props.reliable.title': 'Reliable',
+        'props.reliable.text':  'Monday covers the next 10 days. Thursday covers the next 6. No social media noise. Just your personal event radar.',
+        'cta.title':             'Ready for Berlin?',
+        'cta.subtitle':          'Free · Straight to your inbox · Unsubscribe anytime',
+        'footer.cookie_settings': 'Cookie settings',
+      }
+    };
+
+    function setLang(lang) {
+      const t = i18n[lang];
+      if (!t) return;
+      document.documentElement.lang = lang;
+      document.documentElement.dataset.lang = lang;
+      document.getElementById('page-title').textContent   = t['page.title'];
+      document.getElementById('meta-description').content = t['page.description'];
+      document.getElementById('og-title').content         = t['og.title'];
+      document.getElementById('og-description').content   = t['og.description'];
+      document.getElementById('cta-input').placeholder    = lang === 'de' ? 'deine@email.de' : 'your@email.com';
+      document.getElementById('form-de').style.display    = lang === 'de' ? 'flex' : 'none';
+      document.getElementById('form-en').style.display    = lang === 'en' ? 'flex' : 'none';
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (t[key] !== undefined) el.textContent = t[key];
+      });
+      document.querySelectorAll('[data-i18n-html]').forEach(el => {
+        const key = el.dataset.i18nHtml;
+        if (t[key] !== undefined) el.innerHTML = t[key];
+      });
+      if (window.klaroConfig) window.klaroConfig.lang = lang;
+      document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      localStorage.setItem('yesberlin_lang', lang);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const saved  = localStorage.getItem('yesberlin_lang');
+      const browser = navigator.language?.startsWith('en') ? 'en' : 'de';
+      const init   = saved || browser;
+      if (init !== 'de') setLang(init);
+    });
+  </script>
+
+  <!-- ═══════════════════════════════════════
+       HONEYPOT — Bot-Blocking
+       Wenn b_confirm ausgefüllt ist = Bot → Submit blockieren
+  ═══════════════════════════════════════ -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('form[data-type="subscription"]').forEach(form => {
+        form.addEventListener('submit', function(e) {
+          const honeypot = this.querySelector('input[name="b_confirm"]');
+          if (honeypot && honeypot.value !== '') {
+            e.preventDefault(); // Bot erkannt — still blockieren
+            return false;
+          }
+        });
+      });
+
+      // CTA Formular: locale synchron mit Sprachumschalter halten
+      const ctaLocale = document.getElementById('cta-locale');
+      if (ctaLocale) {
+        const observer = new MutationObserver(() => {
+          ctaLocale.value = document.documentElement.lang || 'de';
+        });
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+      }
+    });
+  </script>
+
+  <!-- Brevo Subscription JS -->
+  <script>
+    window.REQUIRED_CODE_ERROR_MESSAGE = 'Wähle bitte einen Ländervorwahl aus.';
+    window.LOCALE = 'de';
+    window.EMAIL_INVALID_MESSAGE = "Bitte gib eine gültige E-Mail-Adresse ein.";
+    window.REQUIRED_ERROR_MESSAGE = "Dieses Feld darf nicht leer sein.";
+    window.GENERIC_INVALID_MESSAGE = "Ungültige Eingabe. Bitte erneut versuchen.";
+    window.translation = {
+      common: {
+        selectedList: '{quantity} Liste ausgewählt',
+        selectedLists: '{quantity} Listen ausgewählt',
+      }
+    };
+    var AUTOHIDE = Boolean(0);
+  </script>
+  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+</body>
+</html>
